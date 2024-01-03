@@ -1,0 +1,32 @@
+git config --global user.name "Soya"
+git config --global user.email oj.savchak@gmail.com
+
+mkdir new_project
+cd new_project
+git init
+
+// Створювання .gitignore та його заповнення
+touch .gitignore
+copy con .gitignore
+*.sass
+Yes
+bin/
+admin/
+config/
+Ctrl+Z
+Enter
+
+git add .
+git commit -m "First commit"
+// git branch new-feature
+// git checkout new-feature
+git checkout -b new-feature
+mkdir forum
+touch forum/index.js
+touch forum/index.html
+git add .
+git commit -m "Added forum"
+git checkout master
+git remote add origin https://github.com/S0ya13/new-project.git
+// Треба створити репозиторій у github
+git push -u origin master
